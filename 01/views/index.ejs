@@ -5,14 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
   <title>My Profile</title>
 </head>
 
 <body>
   <center>
-    <img src="https://graph.facebook.com/100008024768026/picture?width=200&height=200" height="200" width="200" alt="">
-    <br>
+    <img src="https://graph.facebook.com/100008024768026/picture?width=200&height=200" class="img-responsive img-rounded" alt="">
     <h2>พงศธร วีระตุมมา</h2>
+    <a href="https://www.facebook.com/palmz.haxker" target="_blank">https://www.facebook.com/palmz.haxker</a>
+    <input type="hidden" name="password" value="<%= password %>">
+    <br><br>
+    <a href="/logout">[ ออกจากระบบ <%= password %> ]</a>
   </center>
 </body>
 
