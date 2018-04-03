@@ -21,8 +21,16 @@ app.get('/', (req, res) => {
   }
 });
 
+app.get('/register', (req, res) => {
+	res.render('register');
+})
 app.post('/login', (req, res) => {
   res.cookie('password', req.body.password);
+  res.redirect('/');
+})
+
+app.post('/register', (req, res) => {
+  secretPassword.push(req.body.password);
   res.redirect('/');
 })
 
